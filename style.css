@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+/* Extra small devices (phones, less than 768px) */
+
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+
+@media screen and (max-width: 797px) {
+    .middle, .footer-container {
+        flex-direction: column;
+        width: 100%;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .middle-text>p {
+        text-align: justify;
+    }
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+
+@media screen and (min-width: 798px) {
+
+}
+/* Large devices (large desktops, 1200px and up) */
+
+@media (min-width: @screen-lg-min) {
+    ...
+}
+
+* {
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    /* overflow: hidden; */
+    z-index: 2;
+}
+
+.head-container {
+    background: white;
+    height: 110px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    -webkit-transition: all .6s linear;
+    -moz-transition: all .6s linear;
+    -o-transition: all .6s linear;
+    transition: all .6s linear;
+}
+
+.head-logo {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 360px;
+}
+
+img.head-logo {
+    width: 100%;
+}
+
+.head-menu-container {
+    font-size: .8em;
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.head-menu {
+    width: 100%;
+    height: 100%;
+    min-height: 80px;
+    min-width: 95px;
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: background .5s linear;
+    -moz-transition: background .5s linear;
+    -o-transition: background .5s linear;
+    transition: background .5s linear;
+}
+
+.head-menu:hover {
+    border: 1px solid grey;
+    background: rgb(54, 173, 240);
+}
+
+.middle-menu {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+img.logo {
+    width: 320px;
+    display: flex;
+}
+
+.main-container {
+    position: relative;
+    margin-top: -110px;
+    animation: fade-slide-down 1.2s ease-out forwards;
+}
+
+img.main-img-container {
+    width: 100%;
+    height: auto;
+}
+
+.main-text {
+    background: rgba(91, 91, 91, .7);
+    color: white;
+    width: 40%;
+    padding: 20px 10% 20px 10%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.middle-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.middle-row {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    /* border: 5px solid black; */
+}
+
+.middle {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+    width: 100% border: 1px solid black;
+}
+
+.fab, .fas {
+    font-size: 6.5em;
+    border-radius: 120px;
+    padding: 20px 30px 20px 30px;
+    border: 5px solid rgb(54, 173, 240);
+    background: white;
+    color: rgb(54, 173, 240);
+}
+
+.fab:hover, .fas:hover {
+    color: white;
+    background: rgb(54, 173, 240);
+    -webkit-transition: color .4s linear;
+    -moz-transition: color .4s linear;
+    -o-transition: color .4s linear;
+    transition: color .4s linear;
+}
+
+.footer-container {
+    width: 100%;
+    min-height: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: grey;
+    padding-top: 20px;
+}
+
+.expandHeader {
+    width: 100%;
+}
+
+@keyframes fade-slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fade-slide-rotate {
+    0% {
+        opacity: 0;
+        transform: rotate(-10deg);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
