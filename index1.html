@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
@@ -11,14 +12,23 @@
 <body>
     <div class="header">
         <div class="head-container">
-            <div class="head-logo">
-                <img class="head-logo" src="images/logo_xl.png">
-            </div>
-            <div class="head-menu-container">
-                <div class="head-menu first-menu">Home</div>
-                <div class="head-menu middle-menu">Portafolio</div>
-                <div class="head-menu last-menu">Contact</div>
-            </div>
+            <nav class="w-100 navbar navbar-expand-lg navbar-light ">
+                <a class="navbar-brand" href="#"><img class="head-logo" src="images/logo_xl.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <div class="head-menu-containerr bg-light">
+                            <div class="head-menu first-menu">Home</div>
+                            <div class="head-menu middle-menu">Portafolio</div>
+                            <div class="head-menu last-menu">Contact</div>
+                        </div>
+                    </ul>
+
+                </div>
+            </nav>
         </div>
     </div>
     <div id="main-container" class="main-container">
@@ -35,7 +45,7 @@
         <div class="middle">
             <div class="middle-row">
                 <div class="middle-img">
-                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-css3-alt rounded-circle"></i>
                 </div>
                 <div class="middle-text">
                     <h3>CSS3</h3>
@@ -45,7 +55,7 @@
             </div>
             <div class="middle-row">
                 <div class="middle-img">
-                    <i class="fab fa-js-square"></i>
+                    <i class="fab fa-js-square rounded-circle"></i>
                 </div>
                 <div class="middle-text">
                     <h3>CSS3</h3>
@@ -56,7 +66,7 @@
 
             <div class="middle-row">
                 <div class="middle-img">
-                    <i class="fas fa-database"></i>
+                    <i class="fas fa-database rounded-circle"></i>
                 </div>
                 <div class="middle-text">
                     <h3>CSS3</h3>
@@ -88,52 +98,52 @@
         </div>
     </div>
     <!-- Footer -->
-<footer class="page-footer font-small special-color-dark pt-4">
+    <footer class="page-footer font-small special-color-dark pt-4">
 
-    <!-- Footer Elements -->
-    <div class="container">
+        <!-- Footer Elements -->
+        <div class="container">
 
-      <!-- Social buttons -->
-      <ul class="list-unstyled list-inline text-center">
-        <li class="list-inline-item">
-          <a class="btn-floating btn-fb mx-1">
-            <i class="fa fa-facebook"> </i>
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a class="social-media-size btn-floating btn-fb mx-1">
+                    <i class="fab fa-facebook"> </i>
           </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="btn-floating btn-tw mx-1">
-            <i class="fa fa-twitter"> </i>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-tw mx-1">
+            <i class="fab fa-twitter"> </i>
           </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="btn-floating btn-gplus mx-1">
-            <i class="fa fa-google-plus"> </i>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-gplus mx-1">
+            <i class="fab fa-google-plus"> </i>
           </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="btn-floating btn-li mx-1">
-            <i class="fa fa-linkedin"> </i>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-li mx-1">
+            <i class="fab fa-linkedin"> </i>
           </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="btn-floating btn-dribbble mx-1">
-            <i class="fa fa-dribbble"> </i>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-dribbble mx-1">
+            <i class="fab fa-dribbble"> </i>
           </a>
-        </li>
-      </ul>
-      <!-- Social buttons -->
+                </li>
+            </ul>
+            <!-- Social buttons -->
 
-    </div>
-    <!-- Footer Elements -->
+        </div>
+        <!-- Footer Elements -->
 
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2018 Copyright:
-      <a href="https://mdbootstrap.com/bootstrap-tutorial/"> MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a href="https://mdbootstrap.com/bootstrap-tutorial/"> MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
 
-  </footer>
-  <!-- Footer -->
+    </footer>
+    <!-- Footer -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>

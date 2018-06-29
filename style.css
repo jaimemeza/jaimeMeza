@@ -15,14 +15,12 @@
     .middle-text>p {
         text-align: justify;
     }
-
 }
 
 /* Medium devices (desktops, 992px and up) */
 
-@media screen and (min-width: 798px) {
+@media screen and (min-width: 798px) {}
 
-}
 /* Large devices (large desktops, 1200px and up) */
 
 @media (min-width: @screen-lg-min) {
@@ -72,7 +70,7 @@ img.head-logo {
 
 .head-menu-container {
     font-size: .8em;
-    width: 25%;
+    width: 30%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -154,21 +152,18 @@ img.main-img-container {
 }
 
 .fab, .fas {
-    font-size: 6.5em;
-    border-radius: 120px;
-    padding: 20px 30px 20px 30px;
-    border: 5px solid rgb(54, 173, 240);
-    background: white;
+    font-size: 4.5em;
     color: rgb(54, 173, 240);
 }
 
 .fab:hover, .fas:hover {
+    font-size: 5.5em;
     color: white;
     background: rgb(54, 173, 240);
-    -webkit-transition: color .4s linear;
-    -moz-transition: color .4s linear;
-    -o-transition: color .4s linear;
-    transition: color .4s linear;
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -o-transition: all .4s linear;
+    transition: all .4s linear;
 }
 
 .footer-container {
@@ -185,24 +180,30 @@ img.main-img-container {
     width: 100%;
 }
 
-@keyframes fade-slide-down {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
+.social-media-size {
+    font-size: .5em;
+    border-radius: 120px;
+    padding: 20px 30px 20px 30px;
+    border: 5px solid rgb(54, 173, 240);
+    background: white;
+    color: rgb(54, 173, 240);
+    @keyframes fade-slide-down {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: none;
+        }
     }
-    100% {
-        opacity: 1;
-        transform: none;
+    @keyframes fade-slide-rotate {
+        0% {
+            opacity: 0;
+            transform: rotate(-10deg);
+        }
+        100% {
+            opacity: 1;
+            transform: none;
+        }
     }
-}
-
-@keyframes fade-slide-rotate {
-    0% {
-        opacity: 0;
-        transform: rotate(-10deg);
-    }
-    100% {
-        opacity: 1;
-        transform: none;
-    }
-}
