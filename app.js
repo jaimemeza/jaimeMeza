@@ -14,6 +14,7 @@ $(document).ready(function() {
 //Resize navbar to be responsive and with the scrollup
 const resizeDesign = () => {
     let widthScreen = $(document).width();
+    let heightScreen = $(document).height();
 
     if (widthScreen <= 992 || $(document).scrollTop() > 110) {
         $(".head-container").css({
@@ -38,6 +39,14 @@ const resizeDesign = () => {
         $("#mainMenu").addClass("head-menu-container");
         $("#middleMenu").addClass("middle-menu");
     }
+
+    if (widthScreen <= 500) {
+        $(".main-container").css("height", "heightScreen");
+    } else {
+        $(".main-container").css("height", "120vh");
+    }
+
+
 }
 
 //Delay effect to when scroll to the main photo
