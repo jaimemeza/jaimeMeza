@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Space+Mono');
-
-
-
-
-
+@media (max-width: @iphone-screen) {
+    .main-container {
+        background-attachment: scroll;
+    }
+}
 
 /* Need to move this behavior to JS for the future */
+
 @media screen and (max-width: 992px) {
     .middle, .footer-container {
         flex-direction: column;
@@ -34,6 +35,7 @@ h1 {
 }
 
 /* Sticky and always on top navigation bar  */
+
 .header {
     width: 100%;
     display: flex;
@@ -42,7 +44,6 @@ h1 {
     top: 0;
     z-index: 2;
 }
-
 
 .head-container {
     background: white;
@@ -123,11 +124,11 @@ img.logo {
 }
 
 /* Hack to avoid the overflow on the scroll for a sticky navigation bar */
+
 #skills, #about {
     padding-top: 70px;
     margin-top: -70px;
 }
-
 
 .about-container {
     background: white;
@@ -152,6 +153,7 @@ img.logo {
 }
 
 /* Background color for skills section */
+
 .backgroundColor {
     background: rgb(54, 173, 240);
     height: 75vh;
@@ -172,7 +174,6 @@ img.logo {
     flex-direction: column;
     animation: fade-slide-up 3s ease-out;
 }
-
 
 .fab, .fas {
     font-size: 4.5em;
@@ -202,6 +203,7 @@ img.logo {
 }
 
 /* Line after my name */
+
 .main-text h1::after {
     content: " ";
     display: inline-block;
@@ -216,6 +218,7 @@ img.logo {
 }
 
 /* Line before my name */
+
 .main-text h1::before {
     content: " ";
     right: 90%;
@@ -240,6 +243,7 @@ img.logo {
 } Pending to finish hover transitions on social media buttons */
 
 /* Effect to fade slide down */
+
 @keyframes fade-slide-down {
     0% {
         opacity: 0;
@@ -252,6 +256,7 @@ img.logo {
 }
 
 /* Effect to face slide up  */
+
 @keyframes fade-slide-up {
     0% {
         opacity: 0;
