@@ -4,33 +4,6 @@
 
 
 
-/**
- * iPad with portrait orientation.
- */
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
-  .main-container {
-    height: 1124px;
-  }
-}
-
-/**
- * iPad with landscape orientation.
- */
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
-  .main-container {
-    height: 868px;
-  }
-}
-
-/**
- * iPhone 5
- * You can also target devices with aspect ratio.
- */
-@media screen and (device-aspect-ratio: 40/71) {
-  .main-container {
-    height: 600px;
-  }
-}
 
 /* Need to move this behavior to JS for the future */
 @media screen and (max-width: 992px) {
@@ -137,6 +110,7 @@ img.logo {
 .main-container {
     background: url("images/backgroundm.png");
     height: 120vh;
+    max-height: 2000px;
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;

@@ -2,7 +2,6 @@ $(document).ready(function() {
     resizeDesign();
     changeName();
 
-    changeBackground();
     $(window).scroll(function() {
         resizeDesign();
         changeBackground();
@@ -42,12 +41,12 @@ const resizeDesign = () => {
         $("#middleMenu").addClass("middle-menu");
     }
 
-    // if (widthScreen <= 500) {
-    //     // alert(heightScreen);
-    //     $(".main-container").css("height", "heightScreen");
-    // } else {
-    //     $(".main-container").css("height", "120vh");
-    // }
+    if (widthScreen = 1125) {
+        // alert(heightScreen);
+        $(".main-container").css("height", "heightScreen-500");
+    } else {
+        $(".main-container").css("height", "120vh");
+    }
 
 
 }
