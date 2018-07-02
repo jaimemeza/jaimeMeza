@@ -104,7 +104,7 @@ img.logo {
 
 .main-container {
     background: url("images/backgroundm.png");
-    height: 120vh;
+    height: 120%;
     background-position: inherit;
     background-repeat: no-repeat;
     background-size: cover;
