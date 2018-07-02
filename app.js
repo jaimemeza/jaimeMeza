@@ -1,6 +1,8 @@
 $(document).ready(function() {
     resizeDesign();
     changeName();
+
+    changeBackground();
     $(window).scroll(function() {
         resizeDesign();
         changeBackground();
@@ -56,9 +58,9 @@ const changeBackground = () => {
     if ($(document).scrollTop() < 1000) {
         marginBackground = '0 ' + marginBackground + 'px';
         // alert(marginBackground);
-        $(".main-container").css("background-position", marginBackground);
+        $(".main-text").css("background-position", marginBackground);
     } else if ($(document).scrollTop() >= 1000) {
-        $(".main-container").css("background-position", "0 -70px");
+        $(".main-text").css("background-position", "0 -70px");
     }
 }
 
