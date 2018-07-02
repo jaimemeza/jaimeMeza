@@ -40,11 +40,12 @@ const resizeDesign = () => {
         $("#middleMenu").addClass("middle-menu");
     }
 
-    if (widthScreen <= 500) {
-        $(".main-container").css("height", "heightScreen");
-    } else {
-        $(".main-container").css("height", "120vh");
-    }
+    // if (widthScreen <= 500) {
+    //     // alert(heightScreen);
+    //     $(".main-container").css("height", "heightScreen");
+    // } else {
+    //     $(".main-container").css("height", "120vh");
+    // }
 
 
 }
