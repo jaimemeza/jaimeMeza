@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Space+Mono');
-/* Extra small devices (phones, less than 768px) */
 
-/* No media query since this is the default in Bootstrap */
-
-/* Small devices (tablets, 768px and up) */
-
-@media screen and (max-width: 797px) {
+/* Need to move this behavior to JS for the future */
+@media screen and (max-width: 992px) {
     .middle, .footer-container {
         flex-direction: column;
         width: 100%;
@@ -17,16 +13,6 @@
     }
 }
 
-/* Medium devices (desktops, 992px and up) */
-
-@media screen and (min-width: 798px) {}
-
-/* Large devices (large desktops, 1200px and up) */
-
-@media (min-width: @screen-lg-min) {
-    ...
-}
-
 * {
     font-family: 'Space Mono', monospace;
     margin: 0;
@@ -34,15 +20,24 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-size: 3.5em;
+}
+
+.main-text>p {
+    font-size: 1.1em;
+}
+
+/* Sticky and always on top navigation bar  */
 .header {
     width: 100%;
     display: flex;
     justify-content: center;
     position: sticky;
     top: 0;
-    /* overflow: hidden; */
     z-index: 2;
 }
+
 
 .head-container {
     background: white;
@@ -89,6 +84,7 @@ img.head-logo {
     -moz-transition: background .5s linear;
     -o-transition: background .5s linear;
     transition: background .5s linear;
+    background: white;
 }
 
 .head-menu:hover {
@@ -107,103 +103,160 @@ img.logo {
 }
 
 .main-container {
+    background: url("images/backgroundm.png");
+    height: 120vh;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     position: relative;
-    margin-top: -110px;
-    animation: fade-slide-down 1.2s ease-out forwards;
+    display: flex;
+    margin-top: -100px;
+    justify-content: center;
+    align-items: center;
+    animation: fade-slide-down 1s ease-out forwards;
 }
 
-img.main-img-container {
-    width: 100%;
-    height: auto;
+/* Hack to avoid the overflow on the scroll for a sticky navigation bar */
+#skills, #about {
+    padding-top: 70px;
+    margin-top: -70px;
+}
+
+
+.about-container {
+    background: white;
+    height: 75vh;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    margin-top: -100px;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+
+.skills-container {
+    font-size: 1.1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+/* Background color for skills section */
+.backgroundColor {
+    background: rgb(54, 173, 240);
+    height: 75vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: scroll;
 }
 
 .main-text {
-    background: rgba(91, 91, 91, .7);
     color: white;
-    width: 40%;
-    padding: 20px 10% 20px 10%;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.middle-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.middle-row {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
+    width: 350px;
     text-align: center;
-    padding: 10px;
-    /* border: 5px solid black; */
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    animation: fade-slide-up 3s ease-out;
 }
 
-.middle {
-    display: flex;
-    margin-top: 30px;
-    justify-content: space-around;
-    width: 100% border: 1px solid black;
-}
 
 .fab, .fas {
     font-size: 4.5em;
     color: rgb(54, 173, 240);
 }
 
-.fab:hover, .fas:hover {
+/* .fa-linkedin:hover, .fa-facebook:hover, .fa-github:hover {
     font-size: 5.5em;
-    color: white;
-    background: rgb(54, 173, 240);
     -webkit-transition: all .4s linear;
     -moz-transition: all .4s linear;
     -o-transition: all .4s linear;
-    transition: all .4s linear;
-}
+    transition: all .4s linear; //make a box for each languague icon
+}  Pending to finish details of transitions*/
 
 .footer-container {
     width: 100%;
     min-height: 220px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background: grey;
     padding-top: 20px;
 }
 
-.expandHeader {
-    width: 100%;
+.social-media-size {
+    font-size: 0.5em;
 }
 
-.social-media-size {
-    font-size: .5em;
-    border-radius: 120px;
-    padding: 20px 30px 20px 30px;
-    border: 5px solid rgb(54, 173, 240);
+/* Line after my name */
+.main-text h1::after {
+    content: " ";
+    display: inline-block;
+    height: 3px;
+    margin: 0 45px;
+    position: absolute;
+    top: 32%;
+    width: 40px;
+    zoom: 1;
     background: white;
-    color: rgb(54, 173, 240);
-    @keyframes fade-slide-down {
-        0% {
-            opacity: 0;
-            transform: translateY(-20px);
-        }
-        100% {
-            opacity: 1;
-            transform: none;
-        }
+    left: 90%;
+}
+
+/* Line before my name */
+.main-text h1::before {
+    content: " ";
+    right: 90%;
+    display: inline-block;
+    height: 3px;
+    margin: 0 45px;
+    position: absolute;
+    top: 32%;
+    width: 40px;
+    zoom: 1;
+    background: white;
+}
+
+/* .social-media-size {
+    width: 80px;
+    height: 80px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: auto;
+} Pending to finish hover transitions on social media buttons */
+
+/* Effect to fade slide down */
+@keyframes fade-slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
     }
-    @keyframes fade-slide-rotate {
-        0% {
-            opacity: 0;
-            transform: rotate(-10deg);
-        }
-        100% {
-            opacity: 1;
-            transform: none;
-        }
+    100% {
+        opacity: 1;
+        transform: none;
     }
+}
+
+/* Effect to face slide up  */
+@keyframes fade-slide-up {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(90px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
