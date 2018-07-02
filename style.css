@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Space+Mono');
-@media (max-width: @iphone-screen) {
+@media (max-width: 1300px) {
     .main-container {
         background-attachment: scroll;
+        border: 2px solid red;
     }
 }
 
@@ -111,7 +112,7 @@ img.logo {
 .main-container {
     background: url("images/backgroundm.png");
     height: 120vh;
-    max-height: 500px;
+    max-height: 800px;
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
