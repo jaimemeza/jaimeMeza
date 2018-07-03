@@ -112,11 +112,11 @@ img.logo {
 .main-container {
     background: url("images/backgroundm.png");
     height: 120vh;
-    max-height: 800px;
+    max-height: 600px;
     background-position: left;
     background-repeat: no-repeat;
-    background-size: auto;
-    background-attachment: fixed;
+    /* background-size: auto;
+    background-attachment: fixed; */
     position: relative;
     display: flex;
     justify-content: center;
