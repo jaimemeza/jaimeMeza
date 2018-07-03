@@ -44,8 +44,8 @@ const resizeDesign = () => {
 
 //Delay effect to when scroll to the main photo
 const changeBackground = () => {
-    let marginBackground = ($(document).scrollTop() * -1)/4;
-    if ($(document).scrollTop() < 1000) {
+    let marginBackground = ($(document).scrollTop())/4;
+    if ($(document).scrollTop() < 1500) {
         marginBackground = '0 ' + marginBackground + 'px';
         // alert(marginBackground);
         $("#main-container").css("background-position", marginBackground);
