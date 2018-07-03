@@ -40,15 +40,6 @@ const resizeDesign = () => {
         $("#mainMenu").addClass("head-menu-container");
         $("#middleMenu").addClass("middle-menu");
     }
-
-    if (widthScreen = 1125) {
-        // alert(heightScreen);
-        $(".main-container").css("height", "heightScreen-500");
-    } else {
-        $(".main-container").css("height", "120vh");
-    }
-
-
 }
 
 //Delay effect to when scroll to the main photo
