@@ -44,13 +44,13 @@ const resizeDesign = () => {
 
 //Delay effect to when scroll to the main photo
 const changeBackground = () => {
-    let marginBackground = ($(document).scrollTop() * -1) / 4;
+    let marginBackground = ($(document).scrollTop() * -1)/4;
     if ($(document).scrollTop() < 1000) {
         marginBackground = '0 ' + marginBackground + 'px';
         // alert(marginBackground);
-        $(".main-text").css("background-position", marginBackground);
+        $("#main-container").css("background-position", marginBackground);
     } else if ($(document).scrollTop() >= 1000) {
-        $(".main-text").css("background-position", "0 -70px");
+        $("#main-container").css("background-position", "0 -70px");
     }
 }
 
