@@ -43,15 +43,15 @@ const resizeDesign = () => {
 }
 
 //Delay effect to when scroll to the main photo
-// const changeBackground = () => {
-//     let marginBackground = ($(document).scrollTop() / 1.5);
-//     if ($(document).scrollTop() < 2000) {
-//         marginBackground = '0 ' + marginBackground + 'px';
-//         $("#main-container").css("background-position", marginBackground);
-//     } else if ($(document).scrollTop() >= 2000) {
-//         $("#main-container").css("background-position", "0 -70px");
-//     }
-// }
+const changeBackground = () => {
+    let marginBackground = ($(document).scrollTop() / 1.5);
+    if ($(document).scrollTop() < 2000) {
+        marginBackground = '0 ' + marginBackground + 'px';
+        $("#main-container").css("background-position", marginBackground);
+    } else if ($(document).scrollTop() >= 2000) {
+        $("#main-container").css("background-position", "0 -70px");
+    }
+}
 
 //Responsive to the main text
 const changeName = () => {
