@@ -107,7 +107,7 @@ img.logo {
     height: 120vh;
     background-position: left;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     -webkit-background-size: cover;
     display: flex;
     margin-top: -100px;
