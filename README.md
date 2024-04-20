@@ -1,7 +1,6 @@
 - 👋 Hi, I’m @jaimemeza
-- 👀 I’m interested in programming and analytics
+- 👀 I’m interested in software engineering and ML-Ops
 - 🌱 I’m currently learning machine learning
-- 💞️ I’m looking to collaborate on any project
 - 📫 How to reach me hello at jaimemeza.com
 
 <!---
